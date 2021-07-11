@@ -1,1 +1,11 @@
-# pod.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: nginx
+      image: dockerhub.ir/nginx:latest
+      ports:
+        - containerPort: 80
+      imagePullPolicy: Always
