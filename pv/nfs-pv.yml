@@ -4,10 +4,10 @@ metadata:
   name: nfs
 spec:
   capacity:
-    storage: 1Mi
+    storage: 1Gi
   accessModes:
     - ReadWriteOnce
   nfs:
-    server: 172.28.128.1
+    server: 192.168.56.150
     path: "/mnt/nfs_share"
 
