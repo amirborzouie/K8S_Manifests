@@ -448,7 +448,7 @@ customReadinessProbe: {}
 service:
   ## @param service.type WordPress service type
   ##
-  type: LoadBalancer
+  type: ClusterIP 
   ## @param service.port WordPress service HTTP port
   ##
   port: 80
@@ -498,7 +498,7 @@ service:
 ingress:
   ## @param ingress.enabled Enable ingress record generation for WordPress
   ##
-  enabled: false
+  enabled: true
   ## @param ingress.certManager Add the corresponding annotations for cert-manager integration
   ##
   certManager: false
@@ -602,7 +602,7 @@ persistence:
   accessMode: ReadWriteOnce
   ## @param persistence.size Persistent Volume size
   ##
-  size: 10Gi
+  size: 1Gi
   ## @param persistence.dataSource Custom PVC data source
   ##
   dataSource: {}
