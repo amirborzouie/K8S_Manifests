@@ -122,4 +122,7 @@ Now, let’s get back to our client and see if we can see the file in our mounte
 $ ls /mnt/client_shared_folder/
 ```
 And voila! There goes our file as shown in the snippet below. This is confirmation that our setup was successful.
-~> List-NFS-Files-Client-Ubuntu
+List-NFS-Files-Client-Ubuntu
+
+#### Referrence of nfs instalation on ubuntu:
+www.linuxtechi.com
