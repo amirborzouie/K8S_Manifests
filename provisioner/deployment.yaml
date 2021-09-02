@@ -31,9 +31,9 @@ spec:
             - name: NFS_SERVER
               value: 10.10.10.10
             - name: NFS_PATH
-              value: /mnt/nfs_shared_dir
+              value: /mnt/pv_shared
       volumes:
         - name: nfs-client-root
           nfs:
             server: 10.10.10.10
-            path: /mnt/nfs_shared_dir
+            path: /mnt/pv_shared
